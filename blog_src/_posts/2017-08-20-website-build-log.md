@@ -7,7 +7,6 @@ post_description: The journey of one bored dev's personal site. A first of many 
 ![Old version](https://krusli.github.io/assets/website-old.jpg)
 *Old version of the website*
 
-## 20 Aug
 Insomnia is hitting me hard - and after hours of trying to (and failing at) falling asleep, I decided that I might as well make my time worthwhile while I'm at it.
 
 I've had some ideas at the top of my head for what I wanted in my website. In particular, I wanted my website to:
