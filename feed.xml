@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-20T08:08:18+10:00</updated><id>http://localhost:4000/</id><title type="html">A Curious Blog</title><subtitle>Not your your average blog. Okay, maybe.
+</subtitle><author><name>by Kenneth Aloysius</name></author><entry><title type="html">Angular 4 personal website - a “build log”</title><link href="http://localhost:4000/2017/08/20/website-build-log.html" rel="alternate" type="text/html" title="Angular 4 personal website - a &quot;build log&quot;" /><published>2017-08-20T00:00:00+10:00</published><updated>2017-08-20T00:00:00+10:00</updated><id>http://localhost:4000/2017/08/20/website-build-log</id><content type="html" xml:base="http://localhost:4000/2017/08/20/website-build-log.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/website-old.jpg&quot; alt=&quot;Old version&quot; /&gt;
+&lt;em&gt;Old version of the website&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;20-aug&quot;&gt;20 Aug&lt;/h2&gt;
+&lt;p&gt;Insomnia is hitting me hard - and after hours of trying to (and failing at) falling asleep, I decided that I might as well make my time worthwhile while I’m at it.&lt;/p&gt;
+
+&lt;p&gt;I’ve had some ideas at the top of my head for what I wanted in my website. In particular, I wanted my website to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;tell my &lt;em&gt;story&lt;/em&gt; better - in a format that reads more like a narrative,&lt;/li&gt;
+  &lt;li&gt;be more maintainable,&lt;/li&gt;
+  &lt;li&gt;have reusable common elements - through Components,&lt;/li&gt;
+  &lt;li&gt;as a side benefit, implement the Single Page Application model,&lt;/li&gt;
+  &lt;li&gt;let me try my hand at web design and development again,&lt;/li&gt;
+  &lt;li&gt;at the very least, have no dead links (right now, the &lt;em&gt;About me&lt;/em&gt; and &lt;em&gt;My projects&lt;/em&gt; links are pretty much dead) 😅, and&lt;/li&gt;
+  &lt;li&gt;implement the design ideas I sketched and had floating around my head for weeks but never got around to finally implementing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I used Angular before for several projects: &lt;a href=&quot;http://hookturns.info&quot;&gt;&lt;em&gt;HookTurns&lt;/em&gt;&lt;/a&gt; and  &lt;a href=&quot;https://openelement.herokuapp.com&quot;&gt;&lt;em&gt;OpenElement&lt;/em&gt;&lt;/a&gt;, and although the learning curve for Angular was quite steep, I found Angular’s rich feature-set especially rewarding for me.&lt;/p&gt;
+
+&lt;p&gt;Alas that’s enough of an introduction - I should get started with the project.&lt;/p&gt;
+
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/@angular/cli&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@angular/cli&lt;/code&gt;&lt;/a&gt; - this utility lets you easily create a project, run it locally, build the project, run tests and even reduces the amount of boilerplate code you have to write for Components, Directives, Services. Just use this - it makes your life easier, and makes me wish I started with this when I first worked with Angular&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve used &lt;a href=&quot;https://getbootstrap.com&quot;&gt;Bootstrap&lt;/a&gt; several times before (including my old site), and I’m coming back to it for this version of the website too. If you’re not familiar with it (unlikely), Bootstrap is a front-end framework for responsive design websites, providing a grid system, UI elements and components, and styling (which can still be customised via CSS).&lt;/p&gt;
+
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
+&lt;p&gt;Instead of simply building off a Bootstrap template, I wanted to use Bootstrap elements (and design “patterns”) with some code to help with the UI behaviours I want:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/top-bar1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000/assets/top-bar2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;A top bar that collapses when users scroll down on the page.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;http://localhost:4000/assets/nav-indicator1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000/assets/nav-indicator2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;A navigation indicator (on the right-hand side of the pages here) to indicate the user’s current location and lets the user jump between sections. I plan to have my navigation indicator on the left hand side of the page though.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;http://localhost:4000/assets/album.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Album-style view, for a projects showcase.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Google’s &lt;a href=&quot;https://angular.io/guide/quickstart&quot;&gt;Angular guides&lt;/a&gt; had me configuring the dev environment myself - downloading the libraries, configuring scripts for the webserver and transpiler, taking too much effort and even refusing to do a Webpack build for me in the end. The guide has since been updated to use &lt;code class=&quot;highlighter-rouge&quot;&gt;@angular/cli&lt;/code&gt;.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>by Kenneth Aloysius</name></author><summary type="html">Old version of the website</summary></entry></feed>
