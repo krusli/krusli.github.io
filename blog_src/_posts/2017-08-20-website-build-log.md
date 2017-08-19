@@ -4,7 +4,7 @@ title: Angular 4 personal website - a "build log"
 post_description: The journey of one bored dev's personal site. A first of many posts.
 ---
 
-![Old version]({{ site.url }}/assets/website-old.jpg)
+![Old version](https://krusli.github.io/assets/website-old.jpg)
 *Old version of the website*
 
 ## 20 Aug
@@ -33,15 +33,15 @@ I've used [Bootstrap](https://getbootstrap.com) several times before (including 
 ### Design
 Instead of simply building off a Bootstrap template, I wanted to use Bootstrap elements (and design "patterns") with some code to help with the UI behaviours I want:
 
-![]({{ site.url }}/assets/top-bar1.jpg)
-![]({{ site.url }}/assets/top-bar2.jpg)
+![](https://krusli.github.io/assets/top-bar1.jpg)
+![](https://krusli.github.io/assets/top-bar2.jpg)
 *A top bar that collapses when users scroll down on the page.*
 
 <br>
-![]({{ site.url }}/assets/nav-indicator1.jpg)
-![]({{ site.url }}/assets/nav-indicator2.jpg)
+![](https://krusli.github.io/assets/nav-indicator1.jpg)
+![](https://krusli.github.io/assets/nav-indicator2.jpg)
 *A navigation indicator (on the right-hand side of the pages here) to indicate the user's current location and lets the user jump between sections. I plan to have my navigation indicator on the left hand side of the page though.*
 
 <br>
-![]({{ site.url }}/assets/album.jpg)
+![](https://krusli.github.io/assets/album.jpg)
 *Album-style view, for a projects showcase.*
