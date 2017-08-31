@@ -1,29 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="krusli.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="krusli.github.io/" rel="alternate" type="text/html" /><updated>2017-08-31T16:24:03+10:00</updated><id>krusli.github.io/</id><title type="html">A Curious Blog</title><subtitle>Not your your average blog. Okay, maybe.
-</subtitle><author><name>by Kenneth Aloysius</name></author><entry><title type="html">Restoring default firmware on a Mechkeys.ca Mechmini 1</title><link href="krusli.github.io/2017/08/31/flashing-a-mechmini.html" rel="alternate" type="text/html" title="Restoring default firmware on a Mechkeys.ca Mechmini 1" /><published>2017-08-31T00:00:00+10:00</published><updated>2017-08-31T00:00:00+10:00</updated><id>krusli.github.io/2017/08/31/flashing-a-mechmini</id><content type="html" xml:base="krusli.github.io/2017/08/31/flashing-a-mechmini.html">&lt;p&gt;I had QMK installed on my Mechmini and was looking for a way to restore it to the original firmware. A quick Google search found nothing particularly useful, so I thought I’d note this down in case anyone needs any help with this.&lt;/p&gt;
-
-&lt;p&gt;The steps were done on a Mac, but it should work just fine on Windows too (bar the additional driver installations, if any).&lt;/p&gt;
-
-&lt;h2 id=&quot;files&quot;&gt;Files&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mechmini.hex&lt;/code&gt; from &lt;a href=&quot;https://oldsite.mechkeys.ca/help/&quot;&gt;Mechkeys.ca’s old site&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ps2avrGB_firmware_V1.3.2_170531.zip&lt;/code&gt; from &lt;a href=&quot;https://github.com/showjean/ps2avrU/releases&quot;&gt;ps2avrU GitHub repo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;BootMapper Client from this &lt;a href=&quot;https://github.com/unxmaal/mechkeys_howto&quot;&gt;Bootmapper client guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://krusli.me/files/bootmapper.json&quot;&gt;my .json keymap&lt;/a&gt;. Right click the link and click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Save File As&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;Open BootMapper Client and go to the &lt;em&gt;Options&lt;/em&gt; tab.&lt;/li&gt;
-  &lt;li&gt;Hold down &lt;code class=&quot;highlighter-rouge&quot;&gt;L_Ctrl&lt;/code&gt; when plugging in the keyboard to enter bootloader mode on the keyboard. Flash the &lt;code class=&quot;highlighter-rouge&quot;&gt;ps2avrGB_NKRO.hex&lt;/code&gt; file from &lt;code class=&quot;highlighter-rouge&quot;&gt;ps2avrGB_firmware_V1.3.2_170531.zip&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Flash &lt;code class=&quot;highlighter-rouge&quot;&gt;mechmini.hex&lt;/code&gt; afterwards. This might not be necessary as the &lt;code class=&quot;highlighter-rouge&quot;&gt;mechmini.hex&lt;/code&gt; file just seems to be a keymap (which shows up as all jumbled on my end).&lt;/li&gt;
-  &lt;li&gt;Go to the &lt;em&gt;Key Mapper&lt;/em&gt; tab. If you see a jumble of keys, just load my &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; keymap and click &lt;em&gt;Upload&lt;/em&gt; after tweaking it to your liking.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;https://github.com/unxmaal/mechkeys_howto&lt;/li&gt;
-  &lt;li&gt;https://github.com/qmk/qmk_firmware/tree/master/keyboards/mechmini&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>by Kenneth Aloysius</name></author><summary type="html">I had QMK installed on my Mechmini and was looking for a way to restore it to the original firmware. A quick Google search found nothing particularly useful, so I thought I’d note this down in case anyone needs any help with this.</summary></entry><entry><title type="html">Angular 4 personal website - a “build log”</title><link href="krusli.github.io/2017/08/20/website-build-log.html" rel="alternate" type="text/html" title="Angular 4 personal website - a &quot;build log&quot;" /><published>2017-08-20T00:00:00+10:00</published><updated>2017-08-20T00:00:00+10:00</updated><id>krusli.github.io/2017/08/20/website-build-log</id><content type="html" xml:base="krusli.github.io/2017/08/20/website-build-log.html">&lt;p&gt;&lt;img src=&quot;https://krusli.github.io/assets/website-old.jpg&quot; alt=&quot;Old version&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-20T08:32:17+10:00</updated><id>http://localhost:4000/</id><title type="html">A Curious Blog</title><subtitle>Not your your average blog. Okay, maybe.
+</subtitle><author><name>by Kenneth Aloysius</name></author><entry><title type="html">Angular 4 personal website - a “build log”</title><link href="http://localhost:4000/2017/08/20/website-build-log.html" rel="alternate" type="text/html" title="Angular 4 personal website - a &quot;build log&quot;" /><published>2017-08-20T00:00:00+10:00</published><updated>2017-08-20T00:00:00+10:00</updated><id>http://localhost:4000/2017/08/20/website-build-log</id><content type="html" xml:base="http://localhost:4000/2017/08/20/website-build-log.html">&lt;p&gt;&lt;img src=&quot;https://krusli.github.io/assets/website-old.jpg&quot; alt=&quot;Old version&quot; /&gt;
 &lt;em&gt;Old version of the website&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Insomnia is hitting me hard - and after hours of trying to (and failing at) falling asleep, I decided that I might as well make my time worthwhile while I’m at it.&lt;/p&gt;

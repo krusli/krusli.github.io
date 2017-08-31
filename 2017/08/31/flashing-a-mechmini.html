@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="Not your your average blog. Okay, maybe.">
+  <title>Restoring default firmware on a Mechkeys.ca Mechmini 1</title>
+  <meta name="description" content="I had QMK installed on my Mechmini and was looking for a way to restore it to the original firmware. A quick Google search found nothing particularly useful,...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="krusli.github.io/about/">
+  <link rel="canonical" href="krusli.github.io/2017/08/31/flashing-a-mechmini.html">
   <link rel="alternate" type="application/rss+xml" title="A Curious Blog" href="/feed.xml">
   
   
@@ -67,19 +67,60 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
+        <style>
+  /* center align image descriptions */
+  img + em {
+    text-align: center;
+    display: block;
+  }
+  img {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+</style>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title" itemprop="name headline">Restoring default firmware on a Mechkeys.ca Mechmini 1</h1>
+    <p class="post-meta">
+      <time datetime="2017-08-31T00:00:00+10:00" itemprop="datePublished">
+        
+        Aug 31, 2017
+      </time>
+      </p>
   </header>
 
-  <div class="post-content">
-    <script>
-  window.location = "https://krusli.me";
-</script>
+  <div class="post-content" itemprop="articleBody">
+    <p>I had QMK installed on my Mechmini and was looking for a way to restore it to the original firmware. A quick Google search found nothing particularly useful, so I thought I’d note this down in case anyone needs any help with this.</p>
+
+<p>The steps were done on a Mac, but it should work just fine on Windows too (bar the additional driver installations, if any).</p>
+
+<h2 id="files">Files</h2>
+<ul>
+  <li><code class="highlighter-rouge">mechmini.hex</code> from <a href="https://oldsite.mechkeys.ca/help/">Mechkeys.ca’s old site</a></li>
+  <li><code class="highlighter-rouge">ps2avrGB_firmware_V1.3.2_170531.zip</code> from <a href="https://github.com/showjean/ps2avrU/releases">ps2avrU GitHub repo</a></li>
+  <li>BootMapper Client from this <a href="https://github.com/unxmaal/mechkeys_howto">Bootmapper client guide</a></li>
+  <li><a href="https://krusli.me/files/bootmapper.json">my .json keymap</a>. Right click the link and click on <code class="highlighter-rouge">Save File As</code>.</li>
+</ul>
+
+<h2 id="steps">Steps</h2>
+<ol>
+  <li>Open BootMapper Client and go to the <em>Options</em> tab.</li>
+  <li>Hold down <code class="highlighter-rouge">L_Ctrl</code> when plugging in the keyboard to enter bootloader mode on the keyboard. Flash the <code class="highlighter-rouge">ps2avrGB_NKRO.hex</code> file from <code class="highlighter-rouge">ps2avrGB_firmware_V1.3.2_170531.zip</code>.</li>
+  <li>Flash <code class="highlighter-rouge">mechmini.hex</code> afterwards. This might not be necessary as the <code class="highlighter-rouge">mechmini.hex</code> file just seems to be a keymap (which shows up as all jumbled on my end).</li>
+  <li>Go to the <em>Key Mapper</em> tab. If you see a jumble of keys, just load my <code class="highlighter-rouge">.json</code> keymap and click <em>Upload</em> after tweaking it to your liking.</li>
+</ol>
+
+<h2 id="links">Links</h2>
+<ul>
+  <li>https://github.com/unxmaal/mechkeys_howto</li>
+  <li>https://github.com/qmk/qmk_firmware/tree/master/keyboards/mechmini</li>
+</ul>
 
   </div>
 
+  
 </article>
 
       </div>
