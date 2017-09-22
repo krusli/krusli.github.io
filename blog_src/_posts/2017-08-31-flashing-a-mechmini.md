@@ -11,7 +11,7 @@ The steps were done on a Mac, but it should work just fine on Windows too (bar t
 - `mechmini.hex` from [Mechkeys.ca's old site](https://oldsite.mechkeys.ca/help/)
 - `ps2avrGB_firmware_V1.3.2_170531.zip` from [ps2avrU GitHub repo](https://github.com/showjean/ps2avrU/releases)
 - BootMapper Client from this [Bootmapper client guide](https://github.com/unxmaal/mechkeys_howto)
-- [my .json keymap](https://krusli.me/files/bootmapper.json). Right click the link and click on `Save File As`.
+- [my .json keymap](https://krusli.me/files/bootmapper.json). Right click the link and click on `Save link as file` (or similar).
 
 ## Steps
 1. Open BootMapper Client and go to the *Options* tab.
