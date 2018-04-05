@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Pi Zero W + iPad, flashing QMK with a Pi, and some musings</title>
-  <meta name="description" content="Background One of the fun things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations ...">
+  <meta name="description" content="Background One of the best things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations ...">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/2018/04/05/pi-zero-qmk.html">
@@ -93,7 +93,7 @@
 
   <div class="post-content" itemprop="articleBody">
     <h2 id="background">Background</h2>
-<p>One of the fun things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations Apple sets up in iOS. Being a mechanical keyboard enthusiast myself, I usually prefer to use my iPad with one of my portable keyboards (the KPRepublic JJ40 or my Happy Hacking Keyboard Professional 2<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>), and I run QMK, the Quantum Mechanical Keyboard firmware on them.</p>
+<p>One of the best things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations Apple sets up in iOS. Being a mechanical keyboard enthusiast myself, I usually prefer to use my iPad with one of my portable keyboards (the KPRepublic JJ40 or my Happy Hacking Keyboard Professional 2<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>), and I run QMK, the Quantum Mechanical Keyboard firmware on them.</p>
 
 <p>It’s a well known fact that Apple keeps its iOS platform locked down tight - back then running unsigned code if you don’t have a jailbreak was impossible (since <a href="https://www.lifehacker.com.au/2015/12/how-to-install-unapproved-apps-on-an-iphone-without-jailbreaking/">Xcode 7</a> one could self-sign applications to run on the iPad, although that involves renewing the signing certificate every few months). Even if you could somehow get <code class="highlighter-rouge">gcc-avr</code> and the dependencies installed somehow, compiled a <code class="highlighter-rouge">.hex</code> to flash, the iPad doesn’t allow apps any access to the USB port on the Camera Connection Kit (CCK) - so no luck there.</p>
 

@@ -4,7 +4,7 @@ title: Pi Zero W + iPad, flashing QMK with a Pi, and some musings
 ---
 
 ## Background
-One of the fun things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations Apple sets up in iOS. Being a mechanical keyboard enthusiast myself, I usually prefer to use my iPad with one of my portable keyboards (the KPRepublic JJ40 or my Happy Hacking Keyboard Professional 2[^1]), and I run QMK, the Quantum Mechanical Keyboard firmware on them.
+One of the best things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations Apple sets up in iOS. Being a mechanical keyboard enthusiast myself, I usually prefer to use my iPad with one of my portable keyboards (the KPRepublic JJ40 or my Happy Hacking Keyboard Professional 2[^1]), and I run QMK, the Quantum Mechanical Keyboard firmware on them.
 
 It's a well known fact that Apple keeps its iOS platform locked down tight - back then running unsigned code if you don't have a jailbreak was impossible (since [Xcode 7](https://www.lifehacker.com.au/2015/12/how-to-install-unapproved-apps-on-an-iphone-without-jailbreaking/) one could self-sign applications to run on the iPad, although that involves renewing the signing certificate every few months). Even if you could somehow get `gcc-avr` and the dependencies installed somehow, compiled a `.hex` to flash, the iPad doesn't allow apps any access to the USB port on the Camera Connection Kit (CCK) - so no luck there.
 
