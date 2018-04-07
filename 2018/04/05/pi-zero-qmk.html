@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Pi Zero W + iPad, flashing QMK with a Pi, and some musings</title>
-  <meta name="description" content="Background One of the best things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations ...">
+  <meta name="description" content="Background One of the best things about trying to use an iPad seriously as a daily driver machine is coming up with fun ways around the arbitrary limitations...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/2018/04/05/pi-zero-qmk.html">
+  <link rel="canonical" href="krusli.github.io/2018/04/05/pi-zero-qmk.html">
   <link rel="alternate" type="application/rss+xml" title="write|read" href="/feed.xml">
   
   
@@ -111,7 +111,7 @@
 
 <p>The bootloader and flashing tool used for the PS2AVRGB (atmega32a) boards, however, isn’t installed by the <code class="highlighter-rouge">sudo apt-get install</code> command. The PS2AVRGB (base/board) repos also lacked instructions for setting up <code class="highlighter-rouge">dfu-programmer</code> on Linux, with the instructions pointing to using <code class="highlighter-rouge">brew</code> and installing <code class="highlighter-rouge">dfu-programmer</code> from a Homebrew tap (macOS-specific).</p>
 
-<p>A bit of sleuthing brought up <a href="https://github.com/qmk/qmk_firmware/blob/master/docs/getting_started_build_tools.md">this Reddit post</a> with instructions on how to compile BootloadHID (source code link <a href="https://www.obdev.at/downloads/vusb/bootloadHID.2012-12-08.tar.gz">here</a>). Just install <!--pyusb (`pip install pyusb`) and -->the <code class="highlighter-rouge">libusb-dev</code> dependency using <code class="highlighter-rouge">sudo apt-get install libusb-dev</code> before compiling bootloadHID, then copy the compiled binary to <code class="highlighter-rouge">/usr/bin</code> after compilation so it is accessible from anywhere (alternatively you can simply add the directory with the bootloadHID binary to <code class="highlighter-rouge">PATH</code>).</p>
+<p>A bit of sleuthing brought up <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/76evne/jj40_now_supported_in_qmk/">this Reddit post</a> with instructions on how to compile BootloadHID (source code link <a href="https://www.obdev.at/downloads/vusb/bootloadHID.2012-12-08.tar.gz">here</a>). Just install <!--pyusb (`pip install pyusb`) and -->the <code class="highlighter-rouge">libusb-dev</code> dependency using <code class="highlighter-rouge">sudo apt-get install libusb-dev</code> before compiling bootloadHID, then copy the compiled binary to <code class="highlighter-rouge">/usr/bin</code> after compilation so it is accessible from anywhere (alternatively you can simply add the directory with the bootloadHID binary to <code class="highlighter-rouge">PATH</code>).</p>
 
 <p>The linked guide also shows how to put the board into bootloader mode, but I simply manually booted my JJ40 into bootloader mode (hold backspace while plugging in - may differ between boards).</p>
 
